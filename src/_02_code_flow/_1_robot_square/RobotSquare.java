@@ -3,11 +3,11 @@ package _02_code_flow._1_robot_square;
  *    Copyright (c) The League of Amazing Programmers 2013-2020
  *    Level 0
  */
-
+ 
 import org.jointheleague.graphical.robot.Robot;
 
 // This recipe draws a square using the Robot
-
+ 
 public class RobotSquare {
 	
     public static void main(String[] args){
