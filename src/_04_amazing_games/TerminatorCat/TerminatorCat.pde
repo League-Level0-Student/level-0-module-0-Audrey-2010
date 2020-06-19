@@ -9,8 +9,8 @@
 // This line of code creates a variable to hold your faccate picture
 // You will use it later.
 PImage cat;
-int x=0;
-int y=0;
+int x=303;
+int y=311;
 
 void setup() {
   
@@ -43,33 +43,39 @@ void draw() {
 
 // 8. DRAW CIRCLES.
 //     The circles will have black lines around them by default. Put noStroke(); here to remove them.
-
+noStroke();
 // 9.  COLOR.  Set the color of your ellipse to the laser color you would like
 //    Remember to use the   fill()  command to set colors.
-
+fill(#FFD70D);
 
 // 10 Use the ellipse() command to draw a circle on the eye (you will have to guess its size). 
 //    Use the x and y variables you just created to place the ellipse in the correct location.
 //                  The ellipse command looks like this:
-                ellipse(x, y, width, height);
+             ellipse(x, y, 50, 50);
+             ellipse(x+145,y-20, 50, 50);
+             if (x>600){ 
+             x=303;
+           y=311; 
+         background(cat);}
 // Run the program to make sure it is in the right place and is the right size.
-}
+}        
 
 // 11.  LASER BEAM.  This code will make your ellipse move down and to the right when you press 
 //      the space bar. Run the program to test it.
 //      If you want it to move to the left, change to x-1=.
 void keyPressed() {
-    x+=1;
-    y+=1;
+    x+=5;
+    y+=5;
+}
     
 // 12.  If you want them to go faster, add more than one each time the key is pressed    
-}
+
  
 
 //13.   Now make the cat shoot lasers from the other eye.
 //      You will need to click the mouse on the other eye to figure our where to draw the other circle
 //      Use offsets from the other eye so that you don’t need to make a second set of coordinates.
-//      e.g. ellipse(x+220, y-50, 50, 50);
+//ellipse(x+220, y-50, 50, 50);
 
 //14.  Set the laser back to the beginning when it goes off the screen.
 //     You will need  an if statement to check when x > width 

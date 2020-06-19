@@ -10,6 +10,7 @@ import org.jointheleague.graphical.robot.Robot;
  
 public class RobotSquare {
 	
+	
     public static void main(String[] args){
  
     	// This code makes a new Robot
